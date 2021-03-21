@@ -15,6 +15,25 @@ body {
   --blockquote-color: #666666;
   --border-color: #e2e2e2;
 }
+hr {
+  border-top: 1px solid var(--border-color);
+  margin-top: 20px;
+}
+h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 42px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 42px;
+}
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.4;
+}
+
 ::placeholder {
   color: #ffffff;
 }
@@ -133,31 +152,55 @@ input:focus {
 #search:focus {
   cursor: pointer;
 }
-.logo-nav{
+.logo-nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-top: 25px;
 }
-nav.menu{
+nav.menu {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-top: 25px;
 }
-nav.menu a{
+nav.menu a {
   color: var(--text-color);
   text-decoration: none;
   font-size: 16px;
 }
-nav.menu a:not(:last-child){
+nav.menu a:not(:last-child) {
   padding-right: 20px;
 }
-nav.menu a:hover{
+nav.menu a:hover {
   color: var(--main-color);
 }
-hr{
-  border-top: 1px solid var(--border-color);
+
+.slider {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  grid-column-gap: 60px;
+  align-items: center;
+}
+
+.slider-image {
+  width: 400px;
+}
+.slider-body {
+  max-width: 496px;
+}
+
+.read-more {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  line-height: 1.4;
+  text-decoration: none;
+  background-color: var(--main-color);
+  padding: 9px 7px 12px 7px;
+  border-radius: 10px;
 }
