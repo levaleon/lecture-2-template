@@ -1,43 +1,17 @@
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 965px) {
     .container {
-        max-width: 425px;
+        max-width: 768px;
         margin: auto;
-        padding: 5px;
+        padding: 0 5px;
     }
-    .soc-search,
-    .logo-nav,
-    .slider,
-    .intro-items {
-        display: grid;
-        grid-template-columns: 1fr;
-        align-items: center;
-        justify-items: center;
-    }
-    .service-items,
-    .footer-columns {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    blockquote {
-        padding: 0px;
-    }
-    nav.menu {
-        grid-template-columns: 1fr 1fr;
-        row-gap: 10px;
-        justify-items: center;
-    }
-    .service {
-        display: grid;
-        grid-template-columns: 1fr;
-        row-gap: 10px;
-    }
+
 }
+
 
 @media screen and (max-width: 768px) {
     .container {
         max-width: 768px;
         margin: auto;
-        padding: 5px;
     }
     .slider {
         display: grid;
@@ -52,13 +26,64 @@
         display: grid;
         justify-items: center;
     }
+
+    .toggle-button{
+        height: 50px;
+        width: 50px;
+    }
+
+    .toggle-button span.navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+
 }
+
+@media screen and (max-width: 425px) {
+    .container {
+        max-width: 425px;
+        margin: auto;
+    }
+    .soc-search,
+    .logo-nav,
+    .slider,
+    .intro-items {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+    .service-items,
+    .footer-columns {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    blockquote {
+        padding: 0px;
+    }
+    nav.menu {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 10px;
+        justify-items: center;
+    }
+    .service {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+    }
+
+    .copyrights {
+
+        grid-template-columns: 1fr;
+        justify-items: center;
+
+    }
+}
+
 
 @media screen and (max-width: 375px) {
     .container {
         max-width: 375px;
         margin: auto;
-        padding: 5px;
     }
     .slider-image img {
         width: 100%;
@@ -76,7 +101,6 @@
     .container {
         max-width: 320px;
         margin: auto;
-        padding: 5px;
     }
     .slider-image-backround {
         width: 286px;
